@@ -12,4 +12,5 @@ public interface UsuarioService {
 	public Boolean update(Usuario usuario);
 	public Usuario findByEmail(String email);
 	public Usuario findByTelefono(String telefono);
+	public Boolean login(String email, String password);
 }

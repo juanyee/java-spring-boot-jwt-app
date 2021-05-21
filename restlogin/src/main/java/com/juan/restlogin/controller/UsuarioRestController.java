@@ -41,10 +41,16 @@ public class UsuarioRestController {
 	
 	@PostMapping("/login")
 	@ResponseBody
-	public String login() {
-		String token = TokenUtil.generateToken("hola");
-		System.out.println("token: " + token);
-		return token;
+	public String login(
+			@RequestParam(value="email") String email,
+			@RequestParam(value="password") String password
+	) {
+		if(usuarioService.login(email, password)) {
+			String token = TokenUtil.generateToken(email);
+			System.out.println("token: " + token);
+			return token;
+		}
+		return "error";
 	}
 
 	@PostMapping("/refresh")

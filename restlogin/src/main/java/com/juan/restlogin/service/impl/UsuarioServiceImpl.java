@@ -89,4 +89,17 @@ public class UsuarioServiceImpl implements UsuarioService {
 		}
 		return null;
 	}
+
+	@Override
+	public Boolean login(String email, String password) {
+		try {
+			Usuario usuario = usuarioRepository.findByEmailAndPassword(email, password);
+			if(usuario!=null) {
+				return true;
+			}
+		} catch(Exception ex) {
+			ex.printStackTrace();
+		}
+		return false;
+	}
 }
