@@ -1,4 +1,4 @@
-package com.juan.restlogin.security;
+package com.jwtspringboot.restlogin.security;
 
 import java.io.IOException;
 import java.util.Date;
@@ -21,7 +21,7 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
 
-import com.juan.restlogin.tools.PropertiesSingleton;
+import com.jwtspringboot.restlogin.tools.PropertiesSingleton;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.ExpiredJwtException;

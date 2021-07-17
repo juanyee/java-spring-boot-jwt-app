@@ -1,4 +1,4 @@
-package com.juan.restlogin.model;
+package com.jwtspringboot.restlogin.model;
 
 public class RefreshTokenRequest {
 	private String token;

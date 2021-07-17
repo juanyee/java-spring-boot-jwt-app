@@ -1,4 +1,4 @@
-package com.juan.restlogin;
+package com.jwtspringboot.restlogin;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -9,7 +9,7 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
-import com.juan.restlogin.security.JwtAuthorizationFilter;
+import com.jwtspringboot.restlogin.security.JwtAuthorizationFilter;
 
 @SpringBootApplication
 public class RestloginApplication {

@@ -1,8 +1,8 @@
-package com.juan.restlogin.service;
+package com.jwtspringboot.restlogin.service;
 
 import java.util.List;
 
-import com.juan.restlogin.model.Usuario;
+import com.jwtspringboot.restlogin.model.Usuario;
 
 public interface UsuarioService {
 	public Usuario save(Usuario usuario);

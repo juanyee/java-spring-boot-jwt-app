@@ -1,4 +1,4 @@
-package com.juan.restlogin.service.impl;
+package com.jwtspringboot.restlogin.service.impl;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,9 +7,9 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.juan.restlogin.model.Usuario;
-import com.juan.restlogin.repository.UsuarioRepository;
-import com.juan.restlogin.service.UsuarioService;
+import com.jwtspringboot.restlogin.model.Usuario;
+import com.jwtspringboot.restlogin.repository.UsuarioRepository;
+import com.jwtspringboot.restlogin.service.UsuarioService;
 
 @Service
 public class UsuarioServiceImpl implements UsuarioService {
@@ -40,7 +40,7 @@ public class UsuarioServiceImpl implements UsuarioService {
 	@Override
 	public Usuario findById(Long id) {
 		try {
-			return usuarioRepository.findById(id).orElseThrow();
+			return usuarioRepository.findById(id).orElseThrow(null);
 		} catch(Exception ex) {
 			ex.printStackTrace();
 		}

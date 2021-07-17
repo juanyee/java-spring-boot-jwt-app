@@ -1,4 +1,4 @@
-package com.juan.restlogin.model;
+package com.jwtspringboot.restlogin.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

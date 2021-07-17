@@ -1,4 +1,4 @@
-package com.juan.restlogin.controller;
+package com.jwtspringboot.restlogin.controller;
 
 import java.io.IOException;
 import java.util.Date;
@@ -23,12 +23,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.juan.restlogin.model.RefreshTokenRequest;
-import com.juan.restlogin.model.Usuario;
-import com.juan.restlogin.repository.UsuarioRepository;
-import com.juan.restlogin.security.TokenUtil;
-import com.juan.restlogin.service.UsuarioService;
-import com.juan.restlogin.tools.PropertiesSingleton;
+import com.jwtspringboot.restlogin.model.RefreshTokenRequest;
+import com.jwtspringboot.restlogin.model.Usuario;
+import com.jwtspringboot.restlogin.repository.UsuarioRepository;
+import com.jwtspringboot.restlogin.security.TokenUtil;
+import com.jwtspringboot.restlogin.service.UsuarioService;
+import com.jwtspringboot.restlogin.tools.PropertiesSingleton;
 
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
